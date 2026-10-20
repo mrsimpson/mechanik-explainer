@@ -1,0 +1,58 @@
+# yaml-language-server: $schema=../../node_modules/@lernapps/app-templates/runtime/explainer/explainer.v1.schema.json
+title: Beobachtung oder Deutung
+description: "Eine Beobachtung von einer Deutung unterscheiden."
+blocks:
+  - type: section
+    id: warum
+    title: Warum
+    blocks:
+      - type: text
+        text: |
+          Wer misst, schreibt auf, was er sieht und abliest. Danach überlegt er, warum es so ist. Beides gehört
+          zusammen, darf aber nicht vermischt werden. Sonst hält man seine Vermutung für ein Ergebnis.
+  - type: section
+    id: regel
+    title: Regel
+    blocks:
+      - type: definition
+        term: Beobachtung
+        explanation: Eine Beobachtung hält fest, was du siehst oder abliest, ohne Erklärung.
+      - type: definition
+        term: Deutung
+        explanation: Eine Deutung erklärt, warum etwas so ist. Sie ist eine Vermutung, die du prüfen kannst.
+      - type: note
+        title: Merkhilfe
+        blocks:
+          - type: text
+            text: Steht im Satz ein "weil", ist es meist eine Deutung.
+  - type: section
+    id: beispiel
+    title: Beispiel
+    blocks:
+      - type: example
+        title: Wasser im Glas
+        blocks:
+          - type: table
+            caption: Beobachtung und Deutung
+            header: [Satz, Art]
+            rows:
+              - [Der Wasserstand ist nach einer Stunde um 2 mm gesunken., Beobachtung]
+              - [Das Wasser ist verdunstet., Deutung]
+  - type: section
+    id: uebung
+    title: Übung
+    blocks:
+      - type: true-false
+        id: deutung-waage
+        text: 'Der Satz "Die Waage zeigt 300 g an." ist eine Beobachtung.'
+        answer: true
+        explanation: Der Satz hält nur fest, was an der Waage abzulesen ist. Eine Erklärung steht nicht darin.
+        links:
+          - { title: Beobachtung (Wikipedia), url: "https://de.wikipedia.org/wiki/Beobachtung" }
+      - type: true-false
+        id: deutung-eisen
+        text: 'Der Satz "Der Stein ist schwer, weil er aus Eisen besteht." ist eine Beobachtung.'
+        answer: false
+        explanation: Der Satz erklärt, warum der Stein schwer ist. Das ist eine Deutung. Die Beobachtung wäre nur "Der Stein ist schwer."
+        links:
+          - { title: Beobachtung (Wikipedia), url: "https://de.wikipedia.org/wiki/Beobachtung" }

@@ -1,0 +1,82 @@
+# yaml-language-server: $schema=../../node_modules/@lernapps/app-templates/runtime/explainer/explainer.v1.schema.json
+title: Körper und ihre Eigenschaften
+description: "Körper durch messbare Eigenschaften beschreiben: Länge, Volumen und Masse."
+blocks:
+  - type: section
+    id: warum
+    title: Warum
+    blocks:
+      - type: text
+        text: |
+          Ein Stein, ein Buch, ein Glas Wasser: Alles sind Körper. Du kannst sie beschreiben. Aber manche
+          Beschreibungen sind genau, andere nicht. "Der Stein ist schön" sagt jeder anders. "Der Stein ist 12 cm lang"
+          kann jeder nachmessen.
+  - type: section
+    id: regel
+    title: Regel
+    blocks:
+      - type: definition
+        term: Physikalische Größe
+        explanation: Eine physikalische Größe ist eine Eigenschaft, die du messen kannst, zum Beispiel Länge, Volumen oder Masse.
+      - type: text
+        text: |
+          Die **Länge** sagt, wie weit etwas reicht. Das **Volumen** sagt, wie viel Raum ein Körper einnimmt. Die
+          **Masse** sagt, wie viel Stoff in einem Körper steckt. Farbe und Geruch kannst du nicht in Zahl und Einheit
+          angeben. Darum sind sie keine physikalischen Größen.
+      - type: note
+        title: Merkhilfe
+        blocks:
+          - type: text
+            text: Frage dich, ob du die Eigenschaft mit einer Zahl und einer Einheit angeben kannst. Wenn ja, ist es eine Größe.
+  - type: section
+    id: beispiel
+    title: Beispiel
+    blocks:
+      - type: example
+        title: Ein Stein
+        blocks:
+          - type: table
+            caption: Eigenschaften eines Steins
+            header: [Eigenschaft, Angabe, Größe?]
+            rowHeaders: true
+            rows:
+              - [Länge, 12 cm, ja]
+              - [Masse, 300 g, ja]
+              - [Volumen, 120 cm³, ja]
+              - [Farbe, grau, nein]
+  - type: section
+    id: uebung
+    title: Übung
+    blocks:
+      - type: multiple-choice
+        id: eigenschaften-stein
+        text: Welche Eigenschaften eines Steins sind physikalische Größen?
+        options:
+          - text: Masse
+            correct: true
+            info: Die Masse gibst du in Gramm oder Kilogramm an, zum Beispiel 300 g.
+          - text: Volumen
+            correct: true
+            info: Das Volumen gibst du in Kubikzentimetern oder Litern an, zum Beispiel 120 cm³.
+          - text: Länge
+            correct: true
+            info: Die Länge gibst du in Zentimetern oder Metern an, zum Beispiel 12 cm.
+          - text: Farbe
+            correct: false
+            info: Die Farbe kannst du nicht mit Zahl und Einheit angeben. Darum ist sie keine physikalische Größe.
+        explanation: Länge, Volumen und Masse lassen sich messen und mit Zahl und Einheit angeben. Die Farbe nicht.
+        links:
+          - {
+              title: Physikalische Größe (Wikipedia),
+              url: "https://de.wikipedia.org/wiki/Physikalische_Gr%C3%B6%C3%9Fe",
+            }
+      - type: true-false
+        id: eigenschaften-masse
+        text: Die Masse eines Körpers ist eine physikalische Größe.
+        answer: true
+        explanation: Die Masse kannst du messen und in Gramm oder Kilogramm angeben. Darum ist sie eine physikalische Größe.
+        links:
+          - {
+              title: Physikalische Größe (Wikipedia),
+              url: "https://de.wikipedia.org/wiki/Physikalische_Gr%C3%B6%C3%9Fe",
+            }

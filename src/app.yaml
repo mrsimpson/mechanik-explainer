@@ -1,0 +1,12 @@
+# yaml-language-server: $schema=../node_modules/@lernapps/app-templates/runtime/explainer/explainer.v1.schema.json
+title: Körper und Größen
+intro: |
+  Körper haben Eigenschaften, die du messen kannst: Länge, Volumen und Masse. Hier schätzt, liest du ab und
+  rechnest um, mit neuen Aufgaben, so oft du willst. Für Klasse 7.
+languages: [de]
+chapters: [koerper]
+sources:
+  - title: Umrechnen von Einheiten (Serlo)
+    url: https://de.serlo.org/mathe/1603/umrechnen-von-einheiten
+  - title: Volumeneinheiten (Serlo)
+    url: https://de.serlo.org/mathe/zahlen-gr%C3%B6%C3%9Fen/gr%C3%B6%C3%9Fen-einheiten/volumeneinheiten
