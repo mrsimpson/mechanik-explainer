@@ -17,12 +17,12 @@ Kapitel `koerper` ("Körper und Größen"), Seiten in dieser Reihenfolge:
 
 1. `eigenschaften`: Ich kann Körper anhand messbarer Eigenschaften (Länge, Volumen, Masse) beschreiben.
 2. `messwert`: Ich kann eine Größe als Messwert mit Zahlenwert und Einheit angeben.
-3. `ablesen`: Ich kann Länge, Volumen und Masse mit einem passenden Messgerät ablesen.
+3. `ablesen`: Ich kann Länge, Volumen und Masse mit einem passenden Messgerät ablesen. Übungen `ablesen-zahl` (number) und `skala-ablesen` (Komponente `Skala`).
 4. `umrechnen`: Ich kann Einheiten derselben Größe umrechnen (mm, cm, dm, m, km; mg, g, kg, t; ml, cm³, dm³, l, m³). Übung `umrechnen-ueben`.
 5. `schaetzen`: Ich kann eine Größe schätzen und mit einem Vergleichswert begründen. Übung `schaetzen-ueben`.
 6. `deutung`: Ich kann eine Beobachtung von einer Deutung unterscheiden.
 
-Die Übungs-ids der Seiten 1, 2, 3 und 6 trägt, wer sie schreibt, hier ein.
+Übungs-ids der übrigen Seiten: `eigenschaften-stein`, `eigenschaften-masse` (Seite 1); `messwert-vollstaendig`, `messwert-zahlenwert` (Seite 2); `deutung-waage`, `deutung-eisen` (Seite 6).
 
 ## Content structure
 
@@ -40,8 +40,8 @@ Die Übungs-ids der Seiten 1, 2, 3 und 6 trägt, wer sie schreibt, hier ein.
 
 ## Exercise patterns
 
-- **zuordnen** (Seite 1, 2): Quiz-Typen (`matching` oder `single-choice`) mit `info` je falscher Option. Fest: Frage; variiert: Körper und Eigenschaften.
-- **ablesen** (Seite 3): Vue-Komponente mit gezogener Skala und gezogenem Strichabstand; Rückfall feste SVG-Bilder in `src/images/`.
+- **zuordnen** (Seite 1, 2): `multiple-choice`, `single-choice`, `true-false` und `number` mit `info` je Option. Fest: Frage; variiert: Körper und Eigenschaften.
+- **ablesen** (Seite 3): Vue-Komponente `Skala` (`src/components/Skala.vue`, Logik und Tests in `Skala.ts`, `Skala.test.ts`): Messzylinder mit gezogenem Teilstrichwert (2, 5, 10 oder 20 ml), beschriftet jeder fünfte Strich, Wasserstand nie auf einem beschrifteten Strich; Antwort eine Zahl in ml; Fehler: Teilstriche gezählt, nur beschrifteten Strich gelesen. Die Seite hat zusätzlich eine feste `number`-Aufgabe, weil jede Seite eine Quiz- oder `generated`-Übung braucht (eine Komponente zählt nicht).
 - **umrechnen** (Seite 4): `generated` `umrechnen-ueben`, Daten `src/data/einheiten.yaml` (`faktor` = so viele der kleinsten Einheit der Größe, ganzzahlig). Fest: Aufgabentext, Fehlerliste (falsche Richtung, Komma eine Stelle zu weit nach rechts oder links); variiert: Einheitenpaar derselben Größe, Zahl x.
 - **schätzen** (Seite 5): `generated` `schaetzen-ueben`, Daten `src/data/vergleiche.yaml` (Fläche in km², Jahr, Herausgeber, Quelle). Fest: Aufgabentext; variiert: Paar a, b mit 10 < b/a ≤ 60; Antwort ganze Zahl mit absoluter Toleranz 5; Fehler: Faktor 10 zu klein oder zu groß.
 - **wahr/falsch mit Grund** (Seite 6): Aussage wählen: Beobachtung oder Deutung; Grund in der Rückmeldung.
@@ -50,7 +50,7 @@ Die Übungs-ids der Seiten 1, 2, 3 und 6 trägt, wer sie schreibt, hier ein.
 ## Figures
 
 - Tabellen für Stellenwerttafeln (`table`, keine leeren Zellen: "0" eintragen).
-- Skalen: eigene SVG-Zeichnungen, `source: selbst gezeichnet`, `licence: CC0-1.0`; Textalternative nennt die Skala, nicht die Antwort.
+- Skala: von der Komponente `Skala` als SVG gezeichnet; die Beschreibung (`describe`) nennt die Skala und den Abstand zum beschrifteten Strich, nicht den Messwert.
 - Figur zeigt das Gegebene, nie die Antwort.
 
 ## Sources
@@ -58,6 +58,7 @@ Die Übungs-ids der Seiten 1, 2, 3 und 6 trägt, wer sie schreibt, hier ein.
 - Serlo, "Umrechnen von Einheiten" (https://de.serlo.org/mathe/1603/umrechnen-von-einheiten) und "Volumeneinheiten" (https://de.serlo.org/mathe/zahlen-gr%C3%B6%C3%9Fen/gr%C3%B6%C3%9Fen-einheiten/volumeneinheiten), CC BY-SA 4.0, geöffnet und gelesen; nur Fakten übernommen.
 - Statistisches Bundesamt (Destatis), "Bundesländer mit Hauptstädten nach Fläche, Bevölkerung und Bevölkerungsdichte am 31.12.2024" (Tabelle geöffnet, Flächen übernommen; Vervielfältigung mit Quellenangabe gestattet).
 - Instituto Nacional de Estatística, "Portugal em números 2021": Fläche 92 225,20 km² (CC BY 4.0), geöffnet wurde eine Kopie auf observatorio-lisboa.eapn.pt, nicht die INE-Adresse.
+- Wikipedia (nur Weiterlesen-Links, geöffnet): Physikalische Größe, Messwert, Beobachtung, Messzylinder. Der Artikel "Ablesen" ist Lippenlesen und nicht verwendet.
 - Nicht geprüft: Jahr des Lehrplans, Klasse-7-Zuordnung, Zweitquellen zu den Kompetenzen 1, 3, 5, 6.
 
 ## Adding a chapter or round
@@ -70,5 +71,8 @@ Die Übungs-ids der Seiten 1, 2, 3 und 6 trägt, wer sie schreibt, hier ein.
 
 ## Rules learned from mistakes
 
+- Jede Seite braucht mindestens eine Quiz- oder `generated`-Übung; eine Exercise-Komponente allein reicht nicht.
+- `about` einer Komponente: bei einer Sprache einfache Texte und eine Liste für `mistakes`, keine Sprach-Map.
+- Zufallszahlen aus aufeinanderfolgenden Seeds sehen gleich aus: Seed vor dem Ziehen mischen (`Math.imul(seed, 2654435761)`).
 - Zahlentoleranz bei `number` ist absolut: eine Schätzaufgabe mit Verhältnissen über mehr als einer Größenordnung lässt einen Fehler (Faktor 10) als richtig gelten; deshalb 10 < b/a ≤ 60 und Toleranz 5.
 - Eine Aufgabe, die nur zwei Datensätze hat, ändert nie ihre Aufgabe (Test "the exercise's task changes"): immer genug Datensätze anlegen.

@@ -37,6 +37,8 @@ Lernende schätzen, messen und rechnen Größen um (Länge, Volumen, Masse …) 
 
 - Scope geändert (Creator): nicht nur Gravitation, sondern App "Körperphysik"/Mechanik von vorn; erste Version ein Kapitel gründlich: erstes Inhaltsfeld des Hessen-Kerncurriculums, "Haus der Naturwissenschaften" (Körper und Eigenschaften; physikalische Größen und ihre Messung).
 - Seite "Ablesen" als Vue-Komponente geplant (gezogene Skalen), Rückfall auf feste SVG-Bilder (Creator: Komponenten sind möglich).
+- Seite "Ablesen": Komponente `Skala` plus eine feste `number`-Aufgabe, weil jede Seite eine Quiz- oder generated-Übung braucht (Komponente allein zählt nicht).
+- Schätzen: nur Flächenverhältnisse 10 bis 60 und absolute Toleranz 5, weil die Toleranz nicht relativ ist.
 - Archetyp explainer (guess, Creator hat nicht gewählt): Seiten erklären und üben; `generated`-Aufgaben liefern beliebig viele Aufgaben zum Schätzen/Umrechnen aus gezogenen Werten (laut lernapps-explainer-plan).
 - Lehrplan: Hessen (Gymnasium) als Orientierung; Klasse 7 ist Wunsch des Creators, im Lehrplan nicht belegt.
 
@@ -139,7 +141,14 @@ keywords:
   - Masse
 creator:
   name: Eduard Explainer
-# url, source and topics (paths) follow after the build; not yet known.
+topics:
+  - { title: Körper und ihre Eigenschaften, path: koerper/eigenschaften/ }
+  - { title: Messwert und Einheit, path: koerper/messwert/ }
+  - { title: Ablesen, path: koerper/ablesen/ }
+  - { title: Einheiten umrechnen, path: koerper/umrechnen/ }
+  - { title: Schätzen, path: koerper/schaetzen/ }
+  - { title: Beobachtung oder Deutung, path: koerper/deutung/ }
+# url and source follow after the publish; not yet known.
 fitness:
   account: false
   install: false
@@ -245,29 +254,31 @@ Skizzen: `.vibe/plans/sketches/seite-ablesen.svg`, `seite-umrechnen.svg`, `seite
 
 ### Tasks
 
-- [ ] Load skill `lernapps-check`. Create the app in this plan's folder as it says. `create` keeps this plan. Never
-      write the app by hand.
 - [ ] Load skill `lernapps-github-setup`. Put the app on GitHub as it says: repo, branches, Pages, the app committed
       on `work`, the preview pull request. Give the creator the preview link once.
-- [ ] Fill the content guide `.agents/skills/app-content/SKILL.md` from "Notes" and "Content method"
-      (`app-content-guide`). `grep -c "FILL IN" .agents/skills/app-content/SKILL.md` prints 0. Commit it before
-      any content.
-- [ ] Load skill `lernapps-<archetype>` and the content guide. Questions with options and feedback: also skill
-      `lernapps-content-questions`.
-- [ ] Seite 1 "Körper und ihre Eigenschaften" schreiben; commit, push `work`.
-- [ ] Seite 2 "Messwert und Einheit"; commit, push `work`.
-- [ ] Seite 3 "Ablesen" mit den festen Skalen-SVGs; commit, push `work`.
-- [ ] Seite 4 "Einheiten umrechnen" mit `einheiten.yaml` und generierten Aufgaben; commit, push `work`.
-- [ ] Seite 5 "Schätzen" mit `vergleiche.yaml`, Quellenlinks und Rechenbeispiel; commit, push `work`.
-- [ ] Seite 6 "Beobachtung oder Deutung"; commit, push `work`.
-- [ ] The content guide matches what was built (`app-content-matches`).
-- [ ] `npx lernapps check` passes.
-- [ ] Look at a screenshot of every screen and state (start, each mode, pause, end), desktop and 360 px. Compare
-      each with the confirmed sketches.
+      (offen: kein GitHub im Testmodus; der Plan wäre: Repo anlegen, Branches main/work/gh-pages, Pages aus gh-pages, `work` pushen, Vorschau-Pull-Request)
 - [ ] Every box of Explore, Plan and Code ticked.
 - [ ] Set `phase: commit`: change the value line (`grep '^phase:'` prints `phase: commit`).
 
 ### Completed
+
+- [x] Load skill `lernapps-check`. Create the app in this plan's folder as it says. `create` keeps this plan. Never
+      write the app by hand.
+- [x] Fill the content guide `.agents/skills/app-content/SKILL.md` from "Notes" and "Content method"
+      (`app-content-guide`). `grep -c "FILL IN" .agents/skills/app-content/SKILL.md` prints 0. Commit it before
+      any content.
+- [x] Load skill `lernapps-<archetype>` and the content guide. Questions with options and feedback: also skill
+      `lernapps-content-questions`.
+- [x] Seite 1 "Körper und ihre Eigenschaften" schreiben; commit, push `work`.
+- [x] Seite 2 "Messwert und Einheit"; commit, push `work`.
+- [x] Seite 3 "Ablesen" mit Komponente `Skala` und fester number-Aufgabe; commit (kein Push, ohne GitHub).
+- [x] Seite 4 "Einheiten umrechnen" mit `einheiten.yaml` und generierten Aufgaben; commit, push `work`.
+- [x] Seite 5 "Schätzen" mit `vergleiche.yaml`, Quellenlinks und Rechenbeispiel; commit, push `work`.
+- [x] Seite 6 "Beobachtung oder Deutung"; commit, push `work`.
+- [x] The content guide matches what was built (`app-content-matches`).
+- [x] `npx lernapps check` passes.
+- [x] Look at a screenshot of every screen and state (start, each mode, pause, end), desktop and 360 px. Compare
+      each with the confirmed sketches.
 
 ## Commit
 
