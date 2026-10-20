@@ -148,11 +148,13 @@ topics:
   - { title: Einheiten umrechnen, path: koerper/umrechnen/ }
   - { title: Schätzen, path: koerper/schaetzen/ }
   - { title: Beobachtung oder Deutung, path: koerper/deutung/ }
-# url and source follow after the publish; not yet known.
+url: https://mrsimpson.github.io/mechanik-explainer/
+source: https://github.com/mrsimpson/mechanik-explainer
+# geprüft: lernapps check <url> --entry (9 Regeln, keine Befunde)
 fitness:
   account: false
   install: false
-  storage: device   # (guess) Fortschritt auf dem Gerät; vor dem Eintrag mit lernapps check --report messen
+  storage: none   # gemessen: lernapps check --report
   thirdParty: none
   checked: false
 ```
