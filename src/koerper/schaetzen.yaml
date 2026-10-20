@@ -32,8 +32,8 @@ blocks:
         blocks:
           - type: text
             text: |
-              Das Saarland hat eine Fläche von 2 572,01 km² (Statistisches Bundesamt, Stand 31.12.2024). Portugal hat 92 225,2 km²
-              (Instituto Nacional de Estatística, 2021). Gerundet sind das 2 600 km² und 92 000 km².
+              Das Saarland hat eine Fläche von 2 572,01 km² (Statistisches Bundesamt, Stand 31.12.2024). Portugal hat 92 225,2 km²
+              (Instituto Nacional de Estatística, 2021). Gerundet sind das 2 600 km² und 92 000 km².
               Rechnung: $92\,000 : 2\,600 \approx 35$. Genauer: $92\,225{,}2 : 2\,572{,}01 \approx 35{,}9$.
               Es passen also rund **36** Saarland-Flächen in Portugal. Verglichen werden Flächen, nicht Einwohner.
   - type: section

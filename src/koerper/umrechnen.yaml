@@ -45,15 +45,15 @@ blocks:
         title: Von Metern zu Zentimetern
         blocks:
           - type: text
-            text: Ein Tisch ist 1,4 m lang. Wie viele Zentimeter sind das?
+            text: Ein Seil ist 3,4 m lang. Wie viele Zentimeter sind das?
           - type: table
             caption: Stellenwerttafel der Längen
             header: [km, m, dm, cm, mm]
             rows:
-              - ["0", "1", "4", "0", "0"]
+              - ["0", "3", "4", "0", "0"]
           - type: text
             text: |
-              1 m sind 100 cm. Also $1{,}4 \cdot 100 = 140$. Der Tisch ist **140 cm** lang. Die Zahl wird größer, weil
+              1 m sind 100 cm. Also $3{,}4 \cdot 100 = 340$. Das Seil ist **340 cm** lang. Die Zahl wird größer, weil
               Zentimeter die kleinere Einheit ist.
   - type: section
     id: uebung

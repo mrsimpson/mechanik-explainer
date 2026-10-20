@@ -71,6 +71,8 @@ Kapitel `koerper` ("Körper und Größen"), Seiten in dieser Reihenfolge:
 
 ## Rules learned from mistakes
 
+- Die Klasse `explainer-exercise` nicht auf eine Komponente setzen: der Test zählt sie dann als zusätzliche, leere Übung. Der Stil der Vorlage greift außerhalb davon nicht; die Komponente `Skala` bringt deshalb ein eigenes `<style scoped>` mit (blaue Knöpfe wie die Vorlage).
+- Tausenderzahlen im Text mit geschütztem Leerzeichen (U+00A0) schreiben, damit sie auf dem Handy nicht umbrechen.
 - Jede Seite braucht mindestens eine Quiz- oder `generated`-Übung; eine Exercise-Komponente allein reicht nicht.
 - `about` einer Komponente: bei einer Sprache einfache Texte und eine Liste für `mistakes`, keine Sprach-Map.
 - Zufallszahlen aus aufeinanderfolgenden Seeds sehen gleich aus: Seed vor dem Ziehen mischen (`Math.imul(seed, 2654435761)`).
