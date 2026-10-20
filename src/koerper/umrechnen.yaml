@@ -1,0 +1,87 @@
+# yaml-language-server: $schema=../../node_modules/@lernapps/app-templates/runtime/explainer/explainer.v1.schema.json
+title: Einheiten umrechnen
+description: "Länge, Masse und Volumen in andere Einheiten umrechnen: mit Umrechnungszahl, Tabelle und neuen Aufgaben."
+blocks:
+  - type: section
+    id: warum
+    title: Warum
+    blocks:
+      - type: text
+        text: |
+          Ein Bleistift ist 17 cm lang, die Tür 2 m hoch. Zum Vergleichen müssen beide Längen in derselben Einheit
+          stehen. Wer umrechnen kann, ändert nur die Einheit, nicht die Größe selbst.
+  - type: section
+    id: regel
+    title: Regel
+    blocks:
+      - type: definition
+        term: Umrechnungszahl
+        explanation: Die Umrechnungszahl sagt, wie oft die kleinere Einheit in die größere passt, zum Beispiel 100 cm in 1 m.
+      - type: table
+        caption: Umrechnungszahlen zwischen benachbarten Einheiten
+        header: [Größe, Einheiten in dieser Reihenfolge, Umrechnungszahl]
+        rowHeaders: true
+        rows:
+          - [Länge, "mm, cm, dm, m", "10 von Einheit zu Einheit"]
+          - [Länge, "m, km", "1000"]
+          - [Masse, "mg, g, kg, t", "1000 von Einheit zu Einheit"]
+          - [Volumen, "cm³, dm³, m³", "1000 von Einheit zu Einheit"]
+          - [Volumen, "ml, l", "1000"]
+      - type: text
+        text: |
+          Wichtig beim Volumen: 1 l ist gleich 1 dm³, und 1 ml ist gleich 1 cm³.
+          Von einer größeren zu einer kleineren Einheit wird die Zahl **größer** (mal die Umrechnungszahl). Von einer
+          kleineren zu einer größeren Einheit wird sie **kleiner** (durch die Umrechnungszahl).
+      - type: note
+        title: Merkhilfe
+        blocks:
+          - type: text
+            text: Frage dich zuerst, ob das Ergebnis eine größere oder kleinere Zahl sein muss. Dann rechnest du.
+  - type: section
+    id: beispiel
+    title: Beispiel
+    blocks:
+      - type: example
+        title: Von Metern zu Zentimetern
+        blocks:
+          - type: text
+            text: Ein Tisch ist 1,4 m lang. Wie viele Zentimeter sind das?
+          - type: table
+            caption: Stellenwerttafel der Längen
+            header: [km, m, dm, cm, mm]
+            rows:
+              - ["0", "1", "4", "0", "0"]
+          - type: text
+            text: |
+              1 m sind 100 cm. Also $1{,}4 \cdot 100 = 140$. Der Tisch ist **140 cm** lang. Die Zahl wird größer, weil
+              Zentimeter die kleinere Einheit ist.
+  - type: section
+    id: uebung
+    title: Übung
+    blocks:
+      - type: generated
+        id: umrechnen-ueben
+        given:
+          a: { pick: 1, from: { data: einheiten } }
+          b: { pick: 1, from: { data: einheiten } }
+          x: { decimal: [1, 900], step: 0.5 }
+        where:
+          - "a.groesse == b.groesse"
+          - "a.faktor != b.faktor"
+          - "a.faktor * 1000 >= b.faktor"
+          - "a.faktor <= b.faktor * 1000"
+          - "decimals(x * a.faktor / b.faktor) <= 3"
+        task:
+          text: "Rechne um: {{x}} {{a.symbol}} sind wie viele {{b.symbol}}?"
+        answer: { value: "x * a.faktor / b.faktor", compare: { number: { format: decimal, decimals: 3 } } }
+        mistakes:
+          - value: "x * b.faktor / a.faktor"
+            message: "Das ist die falsche Richtung. Überlege: Muss die Zahl größer oder kleiner werden?"
+          - value: "x * a.faktor / b.faktor * 10"
+            message: "Du hast die Stelle des Kommas eine Stelle zu weit nach rechts geschoben. Zähle die Umrechnungszahl noch einmal nach."
+          - value: "x * a.faktor / b.faktor / 10"
+            message: "Du hast die Stelle des Kommas eine Stelle zu weit nach links geschoben. Zähle die Umrechnungszahl noch einmal nach."
+        hint: "Frage dich: Ist {{b.symbol}} größer oder kleiner als {{a.symbol}}? Danach weißt du, ob die Zahl größer oder kleiner wird."
+        steps:
+          - "Die Einheit {{b.name}} ({{b.symbol}}) ist die Zielgröße."
+          - "Rechne um: {{x}} {{a.symbol}} sind {{answer}} {{b.symbol}}."

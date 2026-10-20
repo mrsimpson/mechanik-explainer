@@ -1,0 +1,15 @@
+# Einheiten je Größe. faktor: so viele der kleinsten Einheit der Größe (mm, mg, ml) ergibt eine Einheit.
+- { name: Millimeter, symbol: mm, groesse: Länge, faktor: 1 }
+- { name: Zentimeter, symbol: cm, groesse: Länge, faktor: 10 }
+- { name: Dezimeter, symbol: dm, groesse: Länge, faktor: 100 }
+- { name: Meter, symbol: m, groesse: Länge, faktor: 1000 }
+- { name: Kilometer, symbol: km, groesse: Länge, faktor: 1000000 }
+- { name: Milligramm, symbol: mg, groesse: Masse, faktor: 1 }
+- { name: Gramm, symbol: g, groesse: Masse, faktor: 1000 }
+- { name: Kilogramm, symbol: kg, groesse: Masse, faktor: 1000000 }
+- { name: Tonne, symbol: t, groesse: Masse, faktor: 1000000000 }
+- { name: Milliliter, symbol: ml, groesse: Volumen, faktor: 1 }
+- { name: Kubikzentimeter, symbol: cm³, groesse: Volumen, faktor: 1 }
+- { name: Kubikdezimeter, symbol: dm³, groesse: Volumen, faktor: 1000 }
+- { name: Liter, symbol: l, groesse: Volumen, faktor: 1000 }
+- { name: Kubikmeter, symbol: m³, groesse: Volumen, faktor: 1000000 }

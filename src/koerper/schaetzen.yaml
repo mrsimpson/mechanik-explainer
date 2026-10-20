@@ -1,0 +1,61 @@
+# yaml-language-server: $schema=../../node_modules/@lernapps/app-templates/runtime/explainer/explainer.v1.schema.json
+title: Schätzen
+description: "Größen schätzen und mit einem Vergleichswert begründen, am Beispiel von Flächen."
+blocks:
+  - type: section
+    id: warum
+    title: Warum
+    blocks:
+      - type: text
+        text: |
+          Nicht immer kannst du messen. Dann hilft ein Vergleich mit etwas, das du kennst. Wer schätzt, wie oft eine
+          bekannte Größe in eine unbekannte passt, kommt oft schon nah ans Ergebnis.
+  - type: section
+    id: regel
+    title: Regel
+    blocks:
+      - type: text
+        text: |
+          Beim Schätzen suchst du erst einen Vergleichswert. Dann überlegst du, wie oft er hineinpasst. Zum Schluss
+          prüfst du, ob dein Ergebnis überhaupt möglich ist: Liegt es vielleicht um das Zehnfache daneben?
+      - type: note
+        title: Merkhilfe
+        blocks:
+          - type: text
+            text: Eine gute Schätzung liegt nah am genauen Wert. Zehnmal zu groß oder zu klein ist keine Schätzung mehr.
+  - type: section
+    id: beispiel
+    title: Beispiel
+    blocks:
+      - type: example
+        title: Wie viele Saarländer-Flächen passen in Portugal?
+        blocks:
+          - type: text
+            text: |
+              Das Saarland hat eine Fläche von 2 572,01 km² (Statistisches Bundesamt, Stand 31.12.2024). Portugal hat 92 225,2 km²
+              (Instituto Nacional de Estatística, 2021). Gerundet sind das 2 600 km² und 92 000 km².
+              Rechnung: $92\,000 : 2\,600 \approx 35$. Genauer: $92\,225{,}2 : 2\,572{,}01 \approx 35{,}9$.
+              Es passen also rund **36** Saarland-Flächen in Portugal. Verglichen werden Flächen, nicht Einwohner.
+  - type: section
+    id: uebung
+    title: Übung
+    blocks:
+      - type: generated
+        id: schaetzen-ueben
+        given:
+          a: { pick: 1, from: { data: vergleiche } }
+          b: { pick: 1, from: { data: vergleiche } }
+        where:
+          - "a.wert * 10 < b.wert"
+          - "b.wert <= a.wert * 60"
+        task:
+          text: "Schätze: Wie oft passt {{a.name}} in die Fläche von {{b.name}}? Gib eine ganze Zahl an."
+        answer: { value: "round(b.wert / a.wert, 0)", compare: { number: { format: integer, tolerance: 5 } } }
+        mistakes:
+          - value: "round(b.wert / a.wert / 10, 0)"
+            message: "Das ist zehnmal zu klein. Vergleiche die Größenordnung von {{a.wert}} km² und {{b.wert}} km²."
+          - value: "round(b.wert / a.wert * 10, 0)"
+            message: "Das ist zehnmal zu groß. Vergleiche die Größenordnung von {{a.wert}} km² und {{b.wert}} km²."
+        hint: "Runde beide Flächen und teile die größere durch die kleinere."
+        steps:
+          - "{{b.wert}} km² : {{a.wert}} km² ergibt etwa {{answer}}."

@@ -1,0 +1,64 @@
+# Flächen zum Vergleichen. wert in km². Jeder Wert nur hier. Gebietsstand der Länder: 31.12.2024.
+- {
+    name: das Saarland,
+    wert: 2572.01,
+    jahr: 2024,
+    herausgeber: Statistisches Bundesamt (Destatis),
+    quelle: "https://www.destatis.de/DE/Themen/Laender-Regionen/Regionales/Gemeindeverzeichnis/Administrativ/02-bundeslaender.html",
+  }
+- {
+    name: Bremen,
+    wert: 419.61,
+    jahr: 2024,
+    herausgeber: Statistisches Bundesamt (Destatis),
+    quelle: "https://www.destatis.de/DE/Themen/Laender-Regionen/Regionales/Gemeindeverzeichnis/Administrativ/02-bundeslaender.html",
+  }
+- {
+    name: Hamburg,
+    wert: 755.09,
+    jahr: 2024,
+    herausgeber: Statistisches Bundesamt (Destatis),
+    quelle: "https://www.destatis.de/DE/Themen/Laender-Regionen/Regionales/Gemeindeverzeichnis/Administrativ/02-bundeslaender.html",
+  }
+- {
+    name: Berlin,
+    wert: 891.12,
+    jahr: 2024,
+    herausgeber: Statistisches Bundesamt (Destatis),
+    quelle: "https://www.destatis.de/DE/Themen/Laender-Regionen/Regionales/Gemeindeverzeichnis/Administrativ/02-bundeslaender.html",
+  }
+- {
+    name: Thüringen,
+    wert: 16202.39,
+    jahr: 2024,
+    herausgeber: Statistisches Bundesamt (Destatis),
+    quelle: "https://www.destatis.de/DE/Themen/Laender-Regionen/Regionales/Gemeindeverzeichnis/Administrativ/02-bundeslaender.html",
+  }
+- {
+    name: Hessen,
+    wert: 21115.64,
+    jahr: 2024,
+    herausgeber: Statistisches Bundesamt (Destatis),
+    quelle: "https://www.destatis.de/DE/Themen/Laender-Regionen/Regionales/Gemeindeverzeichnis/Administrativ/02-bundeslaender.html",
+  }
+- {
+    name: Niedersachsen,
+    wert: 47709.9,
+    jahr: 2024,
+    herausgeber: Statistisches Bundesamt (Destatis),
+    quelle: "https://www.destatis.de/DE/Themen/Laender-Regionen/Regionales/Gemeindeverzeichnis/Administrativ/02-bundeslaender.html",
+  }
+- {
+    name: Bayern,
+    wert: 70541.77,
+    jahr: 2024,
+    herausgeber: Statistisches Bundesamt (Destatis),
+    quelle: "https://www.destatis.de/DE/Themen/Laender-Regionen/Regionales/Gemeindeverzeichnis/Administrativ/02-bundeslaender.html",
+  }
+- {
+    name: Portugal,
+    wert: 92225.2,
+    jahr: 2021,
+    herausgeber: Instituto Nacional de Estatística (INE),
+    quelle: "https://observatorio-lisboa.eapn.pt/wp-content/uploads/PtNumeros2021_c.pdf",
+  }
