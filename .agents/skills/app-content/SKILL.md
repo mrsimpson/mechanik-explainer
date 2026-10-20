@@ -71,7 +71,7 @@ Kapitel `koerper` ("Körper und Größen"), Seiten in dieser Reihenfolge:
 
 ## Rules learned from mistakes
 
-- Eine Komponente übernimmt den Stil der Vorlage nur, wenn ihr Markup in `div.explainer-exercise` steckt und die Klassen `quiz-form`, `quiz-text`, `quiz-number`, `quiz-actions`, `quiz-check` nutzt.
+- Die Klasse `explainer-exercise` nicht auf eine Komponente setzen: der Test zählt sie dann als zusätzliche, leere Übung. Der Stil der Vorlage greift außerhalb davon nicht; die Komponente `Skala` bringt deshalb ein eigenes `<style scoped>` mit (blaue Knöpfe wie die Vorlage).
 - Tausenderzahlen im Text mit geschütztem Leerzeichen (U+00A0) schreiben, damit sie auf dem Handy nicht umbrechen.
 - Jede Seite braucht mindestens eine Quiz- oder `generated`-Übung; eine Exercise-Komponente allein reicht nicht.
 - `about` einer Komponente: bei einer Sprache einfache Texte und eine Liste für `mistakes`, keine Sprach-Map.

@@ -35,8 +35,8 @@ function submit(): void {
 </script>
 
 <template>
-  <div class="explainer-exercise skala">
-    <form class="quiz-form" @submit.prevent="submit">
+  <div class="skala">
+    <form @submit.prevent="submit">
       <svg
         viewBox="0 0 200 320"
         width="200"
@@ -54,8 +54,8 @@ function submit(): void {
           <text x="132" :y="bottom + 16">{{ einheit }}</text>
         </g>
       </svg>
-      <p class="quiz-text">{{ frage }}</p>
-      <label class="quiz-number">
+      <p>{{ frage }}</p>
+      <label>
         {{ eingabe }}
         <input v-model="input" type="text" inputmode="decimal" autocomplete="off" />
         {{ einheit }}
@@ -66,3 +66,34 @@ function submit(): void {
     </form>
   </div>
 </template>
+
+<style scoped>
+.skala svg {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+.skala input {
+  font: inherit;
+  padding: 0.25rem 0.5rem;
+  width: 6rem;
+  border: 1px solid currentColor;
+  border-radius: 6px;
+  background: transparent;
+  color: inherit;
+}
+.skala button {
+  font: inherit;
+  padding: 0.5rem 1rem;
+  border: 0;
+  border-radius: 6px;
+  background: #1d4ed8;
+  color: #fff;
+  cursor: pointer;
+}
+.skala button:focus-visible,
+.skala input:focus-visible {
+  outline: 3px solid #1d4ed8;
+  outline-offset: 2px;
+}
+</style>
