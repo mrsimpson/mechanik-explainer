@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 260" width="360" height="260" role="img" aria-labelledby="t d">
+  <title id="t">Skizze: Seite "Einheiten umrechnen"</title>
+  <desc id="d">Stellenwerttafel der Längeneinheiten mit der Aufgabe, 3,4 m in cm umzurechnen, Eingabefeld und Rückmeldung.</desc>
+  <rect width="360" height="260" fill="#fff" stroke="#999"/>
+  <text x="12" y="24" font-family="sans-serif" font-size="14" font-weight="bold">Umrechnen: Stellenwerttafel</text>
+  <g font-family="sans-serif" font-size="12" text-anchor="middle">
+    <rect x="12" y="40" width="64" height="26" fill="#eee" stroke="#333"/><text x="44" y="57">km</text>
+    <rect x="76" y="40" width="64" height="26" fill="#eee" stroke="#333"/><text x="108" y="57">m</text>
+    <rect x="140" y="40" width="64" height="26" fill="#eee" stroke="#333"/><text x="172" y="57">dm</text>
+    <rect x="204" y="40" width="64" height="26" fill="#eee" stroke="#333"/><text x="236" y="57">cm</text>
+    <rect x="268" y="40" width="64" height="26" fill="#eee" stroke="#333"/><text x="300" y="57">mm</text>
+    <rect x="76" y="66" width="64" height="26" fill="none" stroke="#333"/><text x="108" y="83">3</text>
+    <rect x="140" y="66" width="64" height="26" fill="none" stroke="#333"/><text x="172" y="83">4</text>
+  </g>
+  <text x="12" y="125" font-family="sans-serif" font-size="13">Aufgabe (neu gezogen): 3,4 m = ___ cm</text>
+  <rect x="12" y="136" width="90" height="28" fill="none" stroke="#333"/><text x="22" y="155" font-family="sans-serif" font-size="13" fill="#888">Zahl</text>
+  <rect x="12" y="178" width="90" height="30" fill="#ddd" stroke="#333"/><text x="24" y="198" font-family="sans-serif" font-size="13">Prüfen</text>
+  <text x="12" y="232" font-family="sans-serif" font-size="12" fill="#555">Typischer Fehler: 34 cm → "Von m nach cm sind es zwei</text>
+  <text x="12" y="247" font-family="sans-serif" font-size="12" fill="#555">Stellen nach rechts, nicht eine."</text>
+</svg>
