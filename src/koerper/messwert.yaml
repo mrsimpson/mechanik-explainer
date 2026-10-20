@@ -1,0 +1,68 @@
+# yaml-language-server: $schema=../../node_modules/@lernapps/app-templates/runtime/explainer/explainer.v1.schema.json
+title: Messwert und Einheit
+description: "Eine Größe als Messwert mit Zahlenwert und Einheit angeben."
+blocks:
+  - type: section
+    id: warum
+    title: Warum
+    blocks:
+      - type: text
+        text: |
+          "Der Stift ist 17 lang." Das reicht nicht: 17 was? Erst die Einheit sagt, wie groß die Größe ist. Ohne
+          Einheit kann niemand etwas damit anfangen.
+  - type: section
+    id: regel
+    title: Regel
+    blocks:
+      - type: definition
+        term: Messwert
+        explanation: Ein Messwert ist das Ergebnis einer Messung. Du gibst ihn mit einem Zahlenwert und einer Einheit an.
+      - type: formula
+        formula: '\text{Messwert} = \text{Zahlenwert} \cdot \text{Einheit}'
+      - type: note
+        title: Merkhilfe
+        blocks:
+          - type: text
+            text: Schreibe zu jeder Zahl, die du misst, die Einheit dazu.
+  - type: section
+    id: beispiel
+    title: Beispiel
+    blocks:
+      - type: example
+        title: Die Länge eines Stifts
+        blocks:
+          - type: table
+            caption: Der Messwert eines Stifts
+            rowHeaders: true
+            rows:
+              - [Messwert, 17 cm]
+              - [Zahlenwert, "17"]
+              - [Einheit, cm]
+  - type: section
+    id: uebung
+    title: Übung
+    blocks:
+      - type: single-choice
+        id: messwert-vollstaendig
+        text: Welche Angabe ist ein vollständiger Messwert für die Länge eines Stifts?
+        options:
+          - text: 17 cm
+            correct: true
+            info: Das ist ein Zahlenwert mit Einheit. So gibst du einen Messwert an.
+          - text: "17"
+            correct: false
+            info: Das ist nur ein Zahlenwert. Es fehlt die Einheit, also weiß niemand, ob 17 cm oder 17 m gemeint sind.
+          - text: cm
+            correct: false
+            info: Das ist nur eine Einheit. Es fehlt der Zahlenwert, also weißt du nicht, wie lang der Stift ist.
+        explanation: Ein Messwert besteht aus Zahlenwert und Einheit. Fehlt eines davon, ist die Angabe nicht vollständig.
+        links:
+          - { title: Messwert (Wikipedia), url: "https://de.wikipedia.org/wiki/Messwert" }
+      - type: number
+        id: messwert-zahlenwert
+        text: Ein Glas fasst 250 ml. Wie lautet der Zahlenwert? Gib genau diese Zahl an.
+        answer: 250
+        tolerance: 0
+        explanation: Bei 250 ml ist 250 der Zahlenwert und ml die Einheit.
+        links:
+          - { title: Messwert (Wikipedia), url: "https://de.wikipedia.org/wiki/Messwert" }

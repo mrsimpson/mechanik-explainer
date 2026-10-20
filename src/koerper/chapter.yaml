@@ -1,4 +1,4 @@
 # yaml-language-server: $schema=../../node_modules/@lernapps/app-templates/runtime/explainer/explainer.v1.schema.json
 title: Körper und Größen
 summary: Du lernst, Körper mit Größen zu beschreiben, sie zu schätzen, abzulesen und in andere Einheiten umzurechnen.
-pages: [umrechnen, schaetzen]
+pages: [eigenschaften, messwert, umrechnen, schaetzen, deutung]

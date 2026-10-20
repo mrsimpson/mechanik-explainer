@@ -49,7 +49,7 @@ blocks:
           - "a.wert * 10 < b.wert"
           - "b.wert <= a.wert * 60"
         task:
-          text: "Schätze: Wie oft passt {{a.name}} in die Fläche von {{b.name}}? Gib eine ganze Zahl an."
+          text: "Schätze: Wie oft passt {{a.name}} in die Fläche von {{b.name}}? Gib eine ganze Zahl an. Bis zu 5 daneben zählt noch als richtig."
         answer: { value: "round(b.wert / a.wert, 0)", compare: { number: { format: integer, tolerance: 5 } } }
         mistakes:
           - value: "round(b.wert / a.wert / 10, 0)"
