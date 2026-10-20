@@ -1,0 +1,72 @@
+# yaml-language-server: $schema=../../node_modules/@lernapps/app-templates/runtime/explainer/explainer.v1.schema.json
+title: Ablesen
+description: "Länge, Volumen und Masse an einer Skala ablesen, am Beispiel eines Messzylinders."
+blocks:
+  - type: section
+    id: warum
+    title: Warum
+    blocks:
+      - type: text
+        text: |
+          Ein Messgerät zeigt den Messwert an einer Skala. Meist ist nur jeder fünfte oder zehnte Strich beschriftet.
+          Den Wert zwischen den Beschriftungen musst du selbst bestimmen.
+  - type: section
+    id: regel
+    title: Regel
+    blocks:
+      - type: text
+        text: |
+          Lies so ab: Suche den beschrifteten Strich direkt unter dem Messwert. Bestimme, wie viel ein Teilstrich
+          wert ist. Zähle die Teilstriche bis zum Messwert und rechne sie dazu.
+      - type: note
+        title: Merkhilfe
+        blocks:
+          - type: text
+            text: Teile den Abstand zwischen zwei beschrifteten Strichen durch die Zahl der Abschnitte. So findest du den Wert eines Teilstrichs.
+  - type: section
+    id: beispiel
+    title: Beispiel
+    blocks:
+      - type: example
+        title: Ein Messzylinder mit 2 ml je Teilstrich
+        blocks:
+          - type: text
+            text: |
+              Beschriftet sind 20 ml und 30 ml. Dazwischen liegen 5 Abschnitte. Ein Abschnitt ist also
+              $10 : 5 = 2$ ml. Der Wasserstand liegt 3 Teilstriche über dem Strich bei 20 ml.
+              Rechnung: $20 + 3 \cdot 2 = 26$. Es sind **26 ml**.
+  - type: section
+    id: uebung
+    title: Übung
+    blocks:
+      - type: number
+        id: ablesen-zahl
+        text: >-
+          Ein Messzylinder hat Teilstriche alle 5 ml. Beschriftet ist alle 25 ml. Der Wasserstand liegt 2 Teilstriche
+          über dem Strich bei 50 ml. Wie viel Wasser ist im Messzylinder? Gib die Zahl in ml an, genau.
+        answer: 60
+        tolerance: 0
+        unit: ml
+        mistakes:
+          - { answer: 2, message: "Du hast nur die Teilstriche gezählt. Ein Teilstrich ist aber 5 ml, nicht 1 ml." }
+          - {
+              answer: 52,
+              message: "Du hast 2 ml zu 50 ml gerechnet. Ein Teilstrich ist 5 ml, also zählen 2 Teilstriche 10 ml.",
+            }
+        hint: "Rechne: 50 ml plus 2 Teilstriche mal 5 ml."
+        explanation: Zu 50 ml kommen 2 Teilstriche mal 5 ml dazu, also 10 ml. Es sind 60 ml.
+        links:
+          - { title: Messzylinder (Wikipedia), url: "https://de.wikipedia.org/wiki/Messzylinder" }
+      - type: vue-component
+        id: skala-ablesen
+        component: Skala
+        props:
+          frage: Wie viel Wasser ist im Messzylinder? Gib die Zahl in ml an, ohne Einheit.
+          einheit: ml
+          eingabe: Antwort
+          pruefen: Prüfen
+        examples:
+          accepted:
+            - { answer: 26, seed: 1 }
+          rejected:
+            - { answer: 13, seed: 1 }

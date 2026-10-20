@@ -8,7 +8,7 @@ phase: code
 # prePushFailures: written by the pre-push hook. Never change it.
 prePushFailures: 0
 # failedChecks: failed rules and runs, written by lernapps check and the hooks. Never change it.
-failedChecks: { checks-pass: 4 }
+failedChecks: { checks-pass: 7 }
 ---
 
 # Plan: Körper und Messen (Arbeitstitel), first version
