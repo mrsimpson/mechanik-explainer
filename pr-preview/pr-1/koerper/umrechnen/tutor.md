@@ -1,0 +1,294 @@
+# Einheiten umrechnen – Tutor-Datei
+
+> Länge, Masse und Volumen in andere Einheiten umrechnen: mit Umrechnungszahl, Tabelle und neuen Aufgaben.
+
+App: Körper und Größen. Seite: [Einheiten umrechnen](./)
+
+Diese Datei ist für einen KI-Tutor. Sie enthält die Lösungen: Nutze sie, um anzuleiten und Fehler zu erkennen, nicht um vorzusagen. Die Regeln stehen in llms.txt. Kannst du eine Datei der App nicht abrufen, bitte die lernende Person, den Text der Seite oder diese Datei einzufügen oder anzuhängen.
+
+## Abschnitte
+
+- [Warum](./#warum)
+- [Regel](./#regel)
+- [Beispiel](./#beispiel)
+- [Übung](./#uebung)
+
+## Übungen
+
+### umrechnen-ueben (generated, number)
+
+- Link: [./#umrechnen-ueben](./#umrechnen-ueben), im Abschnitt „Übung“
+- Antwortformat: eine Zahl eintippen
+- Tipp, den die App zeigt (Vorlage: {{…}} sind die Werte der Aufgabe): Frage dich: Ist {{b.symbol}} größer oder kleiner als {{a.symbol}}? Danach weißt du, ob die Zahl größer oder kleiner wird.
+- Lösungsweg (Vorlage: {{…}} sind die Werte der Aufgabe):
+  - Die Einheit {{b.name}} ({{b.symbol}}) ist die Zielgröße.
+  - Rechne um: {{x}} {{a.symbol}} sind {{answer}} {{b.symbol}}.
+- Aufgaben nach Nummer, 1 bis 67: jede eine andere (die App zeigt „Aufgabe Nr. …“):
+  - [Aufgabe Nr. 1](./?umrechnen-ueben=1#umrechnen-ueben): Rechne um: 881 g sind wie viele mg? → Lösung: 881.000
+    - ✗ 0,881: Das ist die falsche Richtung. Überlege: Muss die Zahl größer oder kleiner werden?
+    - ✗ 8810000: Du hast die Stelle des Kommas eine Stelle zu weit nach rechts geschoben. Zähle die Umrechnungszahl noch einmal nach.
+    - ✗ 88100: Du hast die Stelle des Kommas eine Stelle zu weit nach links geschoben. Zähle die Umrechnungszahl noch einmal nach.
+  - [Aufgabe Nr. 2](./?umrechnen-ueben=2#umrechnen-ueben): Rechne um: 878,5 kg sind wie viele g? → Lösung: 878.500
+    - ✗ 0,8785: Das ist die falsche Richtung. Überlege: Muss die Zahl größer oder kleiner werden?
+    - ✗ 8785000: Du hast die Stelle des Kommas eine Stelle zu weit nach rechts geschoben. Zähle die Umrechnungszahl noch einmal nach.
+    - ✗ 87850: Du hast die Stelle des Kommas eine Stelle zu weit nach links geschoben. Zähle die Umrechnungszahl noch einmal nach.
+  - [Aufgabe Nr. 3](./?umrechnen-ueben=3#umrechnen-ueben): Rechne um: 571,5 cm sind wie viele m? → Lösung: 5,715
+    - ✗ 57150: Das ist die falsche Richtung. Überlege: Muss die Zahl größer oder kleiner werden?
+    - ✗ 57,15: Du hast die Stelle des Kommas eine Stelle zu weit nach rechts geschoben. Zähle die Umrechnungszahl noch einmal nach.
+    - ✗ 0,5715: Du hast die Stelle des Kommas eine Stelle zu weit nach links geschoben. Zähle die Umrechnungszahl noch einmal nach.
+  - [Aufgabe Nr. 4](./?umrechnen-ueben=4#umrechnen-ueben): Rechne um: 49,5 mm sind wie viele dm? → Lösung: 0,495
+    - ✗ 4950: Das ist die falsche Richtung. Überlege: Muss die Zahl größer oder kleiner werden?
+    - ✗ 4,95: Du hast die Stelle des Kommas eine Stelle zu weit nach rechts geschoben. Zähle die Umrechnungszahl noch einmal nach.
+    - ✗ 0,0495: Du hast die Stelle des Kommas eine Stelle zu weit nach links geschoben. Zähle die Umrechnungszahl noch einmal nach.
+  - [Aufgabe Nr. 5](./?umrechnen-ueben=5#umrechnen-ueben): Rechne um: 77 l sind wie viele m³? → Lösung: 0,077
+    - ✗ 77000: Das ist die falsche Richtung. Überlege: Muss die Zahl größer oder kleiner werden?
+    - ✗ 0,77: Du hast die Stelle des Kommas eine Stelle zu weit nach rechts geschoben. Zähle die Umrechnungszahl noch einmal nach.
+    - ✗ 0,0077: Du hast die Stelle des Kommas eine Stelle zu weit nach links geschoben. Zähle die Umrechnungszahl noch einmal nach.
+  - [Aufgabe Nr. 6](./?umrechnen-ueben=6#umrechnen-ueben): Rechne um: 590,5 m sind wie viele dm? → Lösung: 5.905
+    - ✗ 59,05: Das ist die falsche Richtung. Überlege: Muss die Zahl größer oder kleiner werden?
+    - ✗ 59050: Du hast die Stelle des Kommas eine Stelle zu weit nach rechts geschoben. Zähle die Umrechnungszahl noch einmal nach.
+    - ✗ 590,5: Du hast die Stelle des Kommas eine Stelle zu weit nach links geschoben. Zähle die Umrechnungszahl noch einmal nach.
+  - [Aufgabe Nr. 7](./?umrechnen-ueben=7#umrechnen-ueben): Rechne um: 23,5 cm sind wie viele m? → Lösung: 0,235
+    - ✗ 2350: Das ist die falsche Richtung. Überlege: Muss die Zahl größer oder kleiner werden?
+    - ✗ 2,35: Du hast die Stelle des Kommas eine Stelle zu weit nach rechts geschoben. Zähle die Umrechnungszahl noch einmal nach.
+    - ✗ 0,0235: Du hast die Stelle des Kommas eine Stelle zu weit nach links geschoben. Zähle die Umrechnungszahl noch einmal nach.
+  - [Aufgabe Nr. 8](./?umrechnen-ueben=8#umrechnen-ueben): Rechne um: 619 km sind wie viele m? → Lösung: 619.000
+    - ✗ 0,619: Das ist die falsche Richtung. Überlege: Muss die Zahl größer oder kleiner werden?
+    - ✗ 6190000: Du hast die Stelle des Kommas eine Stelle zu weit nach rechts geschoben. Zähle die Umrechnungszahl noch einmal nach.
+    - ✗ 61900: Du hast die Stelle des Kommas eine Stelle zu weit nach links geschoben. Zähle die Umrechnungszahl noch einmal nach.
+  - [Aufgabe Nr. 9](./?umrechnen-ueben=9#umrechnen-ueben): Rechne um: 445 mm sind wie viele dm? → Lösung: 4,45
+    - ✗ 44500: Das ist die falsche Richtung. Überlege: Muss die Zahl größer oder kleiner werden?
+    - ✗ 44,5: Du hast die Stelle des Kommas eine Stelle zu weit nach rechts geschoben. Zähle die Umrechnungszahl noch einmal nach.
+    - ✗ 0,445: Du hast die Stelle des Kommas eine Stelle zu weit nach links geschoben. Zähle die Umrechnungszahl noch einmal nach.
+  - [Aufgabe Nr. 10](./?umrechnen-ueben=10#umrechnen-ueben): Rechne um: 501 mm sind wie viele cm? → Lösung: 50,1
+    - ✗ 5010: Das ist die falsche Richtung. Überlege: Muss die Zahl größer oder kleiner werden?
+    - ✗ 501: Du hast die Stelle des Kommas eine Stelle zu weit nach rechts geschoben. Zähle die Umrechnungszahl noch einmal nach.
+    - ✗ 5,01: Du hast die Stelle des Kommas eine Stelle zu weit nach links geschoben. Zähle die Umrechnungszahl noch einmal nach.
+  - [Aufgabe Nr. 11](./?umrechnen-ueben=11#umrechnen-ueben): Rechne um: 379 ml sind wie viele dm³? → Lösung: 0,379
+    - ✗ 379000: Das ist die falsche Richtung. Überlege: Muss die Zahl größer oder kleiner werden?
+    - ✗ 3,79: Du hast die Stelle des Kommas eine Stelle zu weit nach rechts geschoben. Zähle die Umrechnungszahl noch einmal nach.
+    - ✗ 0,0379: Du hast die Stelle des Kommas eine Stelle zu weit nach links geschoben. Zähle die Umrechnungszahl noch einmal nach.
+  - [Aufgabe Nr. 12](./?umrechnen-ueben=12#umrechnen-ueben): Rechne um: 186,5 dm³ sind wie viele ml? → Lösung: 186.500
+    - ✗ 0,1865: Das ist die falsche Richtung. Überlege: Muss die Zahl größer oder kleiner werden?
+    - ✗ 1865000: Du hast die Stelle des Kommas eine Stelle zu weit nach rechts geschoben. Zähle die Umrechnungszahl noch einmal nach.
+    - ✗ 18650: Du hast die Stelle des Kommas eine Stelle zu weit nach links geschoben. Zähle die Umrechnungszahl noch einmal nach.
+  - [Aufgabe Nr. 13](./?umrechnen-ueben=13#umrechnen-ueben): Rechne um: 360 cm sind wie viele mm? → Lösung: 3.600
+    - ✗ 36: Das ist die falsche Richtung. Überlege: Muss die Zahl größer oder kleiner werden?
+    - ✗ 36000: Du hast die Stelle des Kommas eine Stelle zu weit nach rechts geschoben. Zähle die Umrechnungszahl noch einmal nach.
+    - ✗ 360: Du hast die Stelle des Kommas eine Stelle zu weit nach links geschoben. Zähle die Umrechnungszahl noch einmal nach.
+  - [Aufgabe Nr. 14](./?umrechnen-ueben=14#umrechnen-ueben): Rechne um: 575 km sind wie viele m? → Lösung: 575.000
+    - ✗ 0,575: Das ist die falsche Richtung. Überlege: Muss die Zahl größer oder kleiner werden?
+    - ✗ 5750000: Du hast die Stelle des Kommas eine Stelle zu weit nach rechts geschoben. Zähle die Umrechnungszahl noch einmal nach.
+    - ✗ 57500: Du hast die Stelle des Kommas eine Stelle zu weit nach links geschoben. Zähle die Umrechnungszahl noch einmal nach.
+  - [Aufgabe Nr. 15](./?umrechnen-ueben=15#umrechnen-ueben): Rechne um: 373 kg sind wie viele g? → Lösung: 373.000
+    - ✗ 0,373: Das ist die falsche Richtung. Überlege: Muss die Zahl größer oder kleiner werden?
+    - ✗ 3730000: Du hast die Stelle des Kommas eine Stelle zu weit nach rechts geschoben. Zähle die Umrechnungszahl noch einmal nach.
+    - ✗ 37300: Du hast die Stelle des Kommas eine Stelle zu weit nach links geschoben. Zähle die Umrechnungszahl noch einmal nach.
+  - [Aufgabe Nr. 16](./?umrechnen-ueben=16#umrechnen-ueben): Rechne um: 404 m sind wie viele mm? → Lösung: 404.000
+    - ✗ 0,404: Das ist die falsche Richtung. Überlege: Muss die Zahl größer oder kleiner werden?
+    - ✗ 4040000: Du hast die Stelle des Kommas eine Stelle zu weit nach rechts geschoben. Zähle die Umrechnungszahl noch einmal nach.
+    - ✗ 40400: Du hast die Stelle des Kommas eine Stelle zu weit nach links geschoben. Zähle die Umrechnungszahl noch einmal nach.
+  - [Aufgabe Nr. 17](./?umrechnen-ueben=17#umrechnen-ueben): Rechne um: 583 mg sind wie viele g? → Lösung: 0,583
+    - ✗ 583000: Das ist die falsche Richtung. Überlege: Muss die Zahl größer oder kleiner werden?
+    - ✗ 5,83: Du hast die Stelle des Kommas eine Stelle zu weit nach rechts geschoben. Zähle die Umrechnungszahl noch einmal nach.
+    - ✗ 0,0583: Du hast die Stelle des Kommas eine Stelle zu weit nach links geschoben. Zähle die Umrechnungszahl noch einmal nach.
+  - [Aufgabe Nr. 18](./?umrechnen-ueben=18#umrechnen-ueben): Rechne um: 563 cm sind wie viele dm? → Lösung: 56,3
+    - ✗ 5630: Das ist die falsche Richtung. Überlege: Muss die Zahl größer oder kleiner werden?
+    - ✗ 563: Du hast die Stelle des Kommas eine Stelle zu weit nach rechts geschoben. Zähle die Umrechnungszahl noch einmal nach.
+    - ✗ 5,63: Du hast die Stelle des Kommas eine Stelle zu weit nach links geschoben. Zähle die Umrechnungszahl noch einmal nach.
+  - [Aufgabe Nr. 19](./?umrechnen-ueben=19#umrechnen-ueben): Rechne um: 624 kg sind wie viele g? → Lösung: 624.000
+    - ✗ 0,624: Das ist die falsche Richtung. Überlege: Muss die Zahl größer oder kleiner werden?
+    - ✗ 6240000: Du hast die Stelle des Kommas eine Stelle zu weit nach rechts geschoben. Zähle die Umrechnungszahl noch einmal nach.
+    - ✗ 62400: Du hast die Stelle des Kommas eine Stelle zu weit nach links geschoben. Zähle die Umrechnungszahl noch einmal nach.
+  - [Aufgabe Nr. 20](./?umrechnen-ueben=20#umrechnen-ueben): Rechne um: 294 mm sind wie viele m? → Lösung: 0,294
+    - ✗ 294000: Das ist die falsche Richtung. Überlege: Muss die Zahl größer oder kleiner werden?
+    - ✗ 2,94: Du hast die Stelle des Kommas eine Stelle zu weit nach rechts geschoben. Zähle die Umrechnungszahl noch einmal nach.
+    - ✗ 0,0294: Du hast die Stelle des Kommas eine Stelle zu weit nach links geschoben. Zähle die Umrechnungszahl noch einmal nach.
+  - [Aufgabe Nr. 21](./?umrechnen-ueben=21#umrechnen-ueben): Rechne um: 423 l sind wie viele m³? → Lösung: 0,423
+    - ✗ 423000: Das ist die falsche Richtung. Überlege: Muss die Zahl größer oder kleiner werden?
+    - ✗ 4,23: Du hast die Stelle des Kommas eine Stelle zu weit nach rechts geschoben. Zähle die Umrechnungszahl noch einmal nach.
+    - ✗ 0,0423: Du hast die Stelle des Kommas eine Stelle zu weit nach links geschoben. Zähle die Umrechnungszahl noch einmal nach.
+  - [Aufgabe Nr. 22](./?umrechnen-ueben=22#umrechnen-ueben): Rechne um: 813 l sind wie viele m³? → Lösung: 0,813
+    - ✗ 813000: Das ist die falsche Richtung. Überlege: Muss die Zahl größer oder kleiner werden?
+    - ✗ 8,13: Du hast die Stelle des Kommas eine Stelle zu weit nach rechts geschoben. Zähle die Umrechnungszahl noch einmal nach.
+    - ✗ 0,0813: Du hast die Stelle des Kommas eine Stelle zu weit nach links geschoben. Zähle die Umrechnungszahl noch einmal nach.
+  - [Aufgabe Nr. 23](./?umrechnen-ueben=23#umrechnen-ueben): Rechne um: 559 mg sind wie viele g? → Lösung: 0,559
+    - ✗ 559000: Das ist die falsche Richtung. Überlege: Muss die Zahl größer oder kleiner werden?
+    - ✗ 5,59: Du hast die Stelle des Kommas eine Stelle zu weit nach rechts geschoben. Zähle die Umrechnungszahl noch einmal nach.
+    - ✗ 0,0559: Du hast die Stelle des Kommas eine Stelle zu weit nach links geschoben. Zähle die Umrechnungszahl noch einmal nach.
+  - [Aufgabe Nr. 24](./?umrechnen-ueben=24#umrechnen-ueben): Rechne um: 381 mg sind wie viele g? → Lösung: 0,381
+    - ✗ 381000: Das ist die falsche Richtung. Überlege: Muss die Zahl größer oder kleiner werden?
+    - ✗ 3,81: Du hast die Stelle des Kommas eine Stelle zu weit nach rechts geschoben. Zähle die Umrechnungszahl noch einmal nach.
+    - ✗ 0,0381: Du hast die Stelle des Kommas eine Stelle zu weit nach links geschoben. Zähle die Umrechnungszahl noch einmal nach.
+  - [Aufgabe Nr. 25](./?umrechnen-ueben=25#umrechnen-ueben): Rechne um: 302,5 m sind wie viele cm? → Lösung: 30.250
+    - ✗ 3,025: Das ist die falsche Richtung. Überlege: Muss die Zahl größer oder kleiner werden?
+    - ✗ 302500: Du hast die Stelle des Kommas eine Stelle zu weit nach rechts geschoben. Zähle die Umrechnungszahl noch einmal nach.
+    - ✗ 3025: Du hast die Stelle des Kommas eine Stelle zu weit nach links geschoben. Zähle die Umrechnungszahl noch einmal nach.
+  - [Aufgabe Nr. 26](./?umrechnen-ueben=26#umrechnen-ueben): Rechne um: 867 cm³ sind wie viele dm³? → Lösung: 0,867
+    - ✗ 867000: Das ist die falsche Richtung. Überlege: Muss die Zahl größer oder kleiner werden?
+    - ✗ 8,67: Du hast die Stelle des Kommas eine Stelle zu weit nach rechts geschoben. Zähle die Umrechnungszahl noch einmal nach.
+    - ✗ 0,0867: Du hast die Stelle des Kommas eine Stelle zu weit nach links geschoben. Zähle die Umrechnungszahl noch einmal nach.
+  - [Aufgabe Nr. 27](./?umrechnen-ueben=27#umrechnen-ueben): Rechne um: 257,5 l sind wie viele cm³? → Lösung: 257.500
+    - ✗ 0,2575: Das ist die falsche Richtung. Überlege: Muss die Zahl größer oder kleiner werden?
+    - ✗ 2575000: Du hast die Stelle des Kommas eine Stelle zu weit nach rechts geschoben. Zähle die Umrechnungszahl noch einmal nach.
+    - ✗ 25750: Du hast die Stelle des Kommas eine Stelle zu weit nach links geschoben. Zähle die Umrechnungszahl noch einmal nach.
+  - [Aufgabe Nr. 28](./?umrechnen-ueben=28#umrechnen-ueben): Rechne um: 818 ml sind wie viele l? → Lösung: 0,818
+    - ✗ 818000: Das ist die falsche Richtung. Überlege: Muss die Zahl größer oder kleiner werden?
+    - ✗ 8,18: Du hast die Stelle des Kommas eine Stelle zu weit nach rechts geschoben. Zähle die Umrechnungszahl noch einmal nach.
+    - ✗ 0,0818: Du hast die Stelle des Kommas eine Stelle zu weit nach links geschoben. Zähle die Umrechnungszahl noch einmal nach.
+  - [Aufgabe Nr. 29](./?umrechnen-ueben=29#umrechnen-ueben): Rechne um: 335 mm sind wie viele dm? → Lösung: 3,35
+    - ✗ 33500: Das ist die falsche Richtung. Überlege: Muss die Zahl größer oder kleiner werden?
+    - ✗ 33,5: Du hast die Stelle des Kommas eine Stelle zu weit nach rechts geschoben. Zähle die Umrechnungszahl noch einmal nach.
+    - ✗ 0,335: Du hast die Stelle des Kommas eine Stelle zu weit nach links geschoben. Zähle die Umrechnungszahl noch einmal nach.
+  - [Aufgabe Nr. 30](./?umrechnen-ueben=30#umrechnen-ueben): Rechne um: 602,5 km sind wie viele m? → Lösung: 602.500
+    - ✗ 0,6025: Das ist die falsche Richtung. Überlege: Muss die Zahl größer oder kleiner werden?
+    - ✗ 6025000: Du hast die Stelle des Kommas eine Stelle zu weit nach rechts geschoben. Zähle die Umrechnungszahl noch einmal nach.
+    - ✗ 60250: Du hast die Stelle des Kommas eine Stelle zu weit nach links geschoben. Zähle die Umrechnungszahl noch einmal nach.
+  - [Aufgabe Nr. 31](./?umrechnen-ueben=31#umrechnen-ueben): Rechne um: 289 mm sind wie viele m? → Lösung: 0,289
+    - ✗ 289000: Das ist die falsche Richtung. Überlege: Muss die Zahl größer oder kleiner werden?
+    - ✗ 2,89: Du hast die Stelle des Kommas eine Stelle zu weit nach rechts geschoben. Zähle die Umrechnungszahl noch einmal nach.
+    - ✗ 0,0289: Du hast die Stelle des Kommas eine Stelle zu weit nach links geschoben. Zähle die Umrechnungszahl noch einmal nach.
+  - [Aufgabe Nr. 32](./?umrechnen-ueben=32#umrechnen-ueben): Rechne um: 835 m sind wie viele cm? → Lösung: 83.500
+    - ✗ 8,35: Das ist die falsche Richtung. Überlege: Muss die Zahl größer oder kleiner werden?
+    - ✗ 835000: Du hast die Stelle des Kommas eine Stelle zu weit nach rechts geschoben. Zähle die Umrechnungszahl noch einmal nach.
+    - ✗ 8350: Du hast die Stelle des Kommas eine Stelle zu weit nach links geschoben. Zähle die Umrechnungszahl noch einmal nach.
+  - [Aufgabe Nr. 33](./?umrechnen-ueben=33#umrechnen-ueben): Rechne um: 447 m sind wie viele dm? → Lösung: 4.470
+    - ✗ 44,7: Das ist die falsche Richtung. Überlege: Muss die Zahl größer oder kleiner werden?
+    - ✗ 44700: Du hast die Stelle des Kommas eine Stelle zu weit nach rechts geschoben. Zähle die Umrechnungszahl noch einmal nach.
+    - ✗ 447: Du hast die Stelle des Kommas eine Stelle zu weit nach links geschoben. Zähle die Umrechnungszahl noch einmal nach.
+  - [Aufgabe Nr. 34](./?umrechnen-ueben=34#umrechnen-ueben): Rechne um: 693,5 m sind wie viele cm? → Lösung: 69.350
+    - ✗ 6,935: Das ist die falsche Richtung. Überlege: Muss die Zahl größer oder kleiner werden?
+    - ✗ 693500: Du hast die Stelle des Kommas eine Stelle zu weit nach rechts geschoben. Zähle die Umrechnungszahl noch einmal nach.
+    - ✗ 6935: Du hast die Stelle des Kommas eine Stelle zu weit nach links geschoben. Zähle die Umrechnungszahl noch einmal nach.
+  - [Aufgabe Nr. 35](./?umrechnen-ueben=35#umrechnen-ueben): Rechne um: 454 dm³ sind wie viele m³? → Lösung: 0,454
+    - ✗ 454000: Das ist die falsche Richtung. Überlege: Muss die Zahl größer oder kleiner werden?
+    - ✗ 4,54: Du hast die Stelle des Kommas eine Stelle zu weit nach rechts geschoben. Zähle die Umrechnungszahl noch einmal nach.
+    - ✗ 0,0454: Du hast die Stelle des Kommas eine Stelle zu weit nach links geschoben. Zähle die Umrechnungszahl noch einmal nach.
+  - [Aufgabe Nr. 36](./?umrechnen-ueben=36#umrechnen-ueben): Rechne um: 794 cm³ sind wie viele l? → Lösung: 0,794
+    - ✗ 794000: Das ist die falsche Richtung. Überlege: Muss die Zahl größer oder kleiner werden?
+    - ✗ 7,94: Du hast die Stelle des Kommas eine Stelle zu weit nach rechts geschoben. Zähle die Umrechnungszahl noch einmal nach.
+    - ✗ 0,0794: Du hast die Stelle des Kommas eine Stelle zu weit nach links geschoben. Zähle die Umrechnungszahl noch einmal nach.
+  - [Aufgabe Nr. 37](./?umrechnen-ueben=37#umrechnen-ueben): Rechne um: 59 mm sind wie viele cm? → Lösung: 5,9
+    - ✗ 590: Das ist die falsche Richtung. Überlege: Muss die Zahl größer oder kleiner werden?
+    - ✗ 59: Du hast die Stelle des Kommas eine Stelle zu weit nach rechts geschoben. Zähle die Umrechnungszahl noch einmal nach.
+    - ✗ 0,59: Du hast die Stelle des Kommas eine Stelle zu weit nach links geschoben. Zähle die Umrechnungszahl noch einmal nach.
+  - [Aufgabe Nr. 38](./?umrechnen-ueben=38#umrechnen-ueben): Rechne um: 378,5 m sind wie viele dm? → Lösung: 3.785
+    - ✗ 37,85: Das ist die falsche Richtung. Überlege: Muss die Zahl größer oder kleiner werden?
+    - ✗ 37850: Du hast die Stelle des Kommas eine Stelle zu weit nach rechts geschoben. Zähle die Umrechnungszahl noch einmal nach.
+    - ✗ 378,5: Du hast die Stelle des Kommas eine Stelle zu weit nach links geschoben. Zähle die Umrechnungszahl noch einmal nach.
+  - [Aufgabe Nr. 39](./?umrechnen-ueben=39#umrechnen-ueben): Rechne um: 24 m sind wie viele mm? → Lösung: 24.000
+    - ✗ 0,024: Das ist die falsche Richtung. Überlege: Muss die Zahl größer oder kleiner werden?
+    - ✗ 240000: Du hast die Stelle des Kommas eine Stelle zu weit nach rechts geschoben. Zähle die Umrechnungszahl noch einmal nach.
+    - ✗ 2400: Du hast die Stelle des Kommas eine Stelle zu weit nach links geschoben. Zähle die Umrechnungszahl noch einmal nach.
+  - [Aufgabe Nr. 40](./?umrechnen-ueben=40#umrechnen-ueben): Rechne um: 422,5 kg sind wie viele g? → Lösung: 422.500
+    - ✗ 0,4225: Das ist die falsche Richtung. Überlege: Muss die Zahl größer oder kleiner werden?
+    - ✗ 4225000: Du hast die Stelle des Kommas eine Stelle zu weit nach rechts geschoben. Zähle die Umrechnungszahl noch einmal nach.
+    - ✗ 42250: Du hast die Stelle des Kommas eine Stelle zu weit nach links geschoben. Zähle die Umrechnungszahl noch einmal nach.
+  - [Aufgabe Nr. 41](./?umrechnen-ueben=41#umrechnen-ueben): Rechne um: 118,5 dm sind wie viele mm? → Lösung: 11.850
+    - ✗ 1,185: Das ist die falsche Richtung. Überlege: Muss die Zahl größer oder kleiner werden?
+    - ✗ 118500: Du hast die Stelle des Kommas eine Stelle zu weit nach rechts geschoben. Zähle die Umrechnungszahl noch einmal nach.
+    - ✗ 1185: Du hast die Stelle des Kommas eine Stelle zu weit nach links geschoben. Zähle die Umrechnungszahl noch einmal nach.
+  - [Aufgabe Nr. 42](./?umrechnen-ueben=42#umrechnen-ueben): Rechne um: 403,5 mm sind wie viele cm? → Lösung: 40,35
+    - ✗ 4035: Das ist die falsche Richtung. Überlege: Muss die Zahl größer oder kleiner werden?
+    - ✗ 403,5: Du hast die Stelle des Kommas eine Stelle zu weit nach rechts geschoben. Zähle die Umrechnungszahl noch einmal nach.
+    - ✗ 4,035: Du hast die Stelle des Kommas eine Stelle zu weit nach links geschoben. Zähle die Umrechnungszahl noch einmal nach.
+  - [Aufgabe Nr. 43](./?umrechnen-ueben=43#umrechnen-ueben): Rechne um: 417 dm³ sind wie viele m³? → Lösung: 0,417
+    - ✗ 417000: Das ist die falsche Richtung. Überlege: Muss die Zahl größer oder kleiner werden?
+    - ✗ 4,17: Du hast die Stelle des Kommas eine Stelle zu weit nach rechts geschoben. Zähle die Umrechnungszahl noch einmal nach.
+    - ✗ 0,0417: Du hast die Stelle des Kommas eine Stelle zu weit nach links geschoben. Zähle die Umrechnungszahl noch einmal nach.
+  - [Aufgabe Nr. 44](./?umrechnen-ueben=44#umrechnen-ueben): Rechne um: 813 cm sind wie viele mm? → Lösung: 8.130
+    - ✗ 81,3: Das ist die falsche Richtung. Überlege: Muss die Zahl größer oder kleiner werden?
+    - ✗ 81300: Du hast die Stelle des Kommas eine Stelle zu weit nach rechts geschoben. Zähle die Umrechnungszahl noch einmal nach.
+    - ✗ 813: Du hast die Stelle des Kommas eine Stelle zu weit nach links geschoben. Zähle die Umrechnungszahl noch einmal nach.
+  - [Aufgabe Nr. 45](./?umrechnen-ueben=45#umrechnen-ueben): Rechne um: 176 cm sind wie viele dm? → Lösung: 17,6
+    - ✗ 1760: Das ist die falsche Richtung. Überlege: Muss die Zahl größer oder kleiner werden?
+    - ✗ 176: Du hast die Stelle des Kommas eine Stelle zu weit nach rechts geschoben. Zähle die Umrechnungszahl noch einmal nach.
+    - ✗ 1,76: Du hast die Stelle des Kommas eine Stelle zu weit nach links geschoben. Zähle die Umrechnungszahl noch einmal nach.
+  - [Aufgabe Nr. 46](./?umrechnen-ueben=46#umrechnen-ueben): Rechne um: 384 cm sind wie viele mm? → Lösung: 3.840
+    - ✗ 38,4: Das ist die falsche Richtung. Überlege: Muss die Zahl größer oder kleiner werden?
+    - ✗ 38400: Du hast die Stelle des Kommas eine Stelle zu weit nach rechts geschoben. Zähle die Umrechnungszahl noch einmal nach.
+    - ✗ 384: Du hast die Stelle des Kommas eine Stelle zu weit nach links geschoben. Zähle die Umrechnungszahl noch einmal nach.
+  - [Aufgabe Nr. 47](./?umrechnen-ueben=47#umrechnen-ueben): Rechne um: 870 dm³ sind wie viele ml? → Lösung: 870.000
+    - ✗ 0,87: Das ist die falsche Richtung. Überlege: Muss die Zahl größer oder kleiner werden?
+    - ✗ 8700000: Du hast die Stelle des Kommas eine Stelle zu weit nach rechts geschoben. Zähle die Umrechnungszahl noch einmal nach.
+    - ✗ 87000: Du hast die Stelle des Kommas eine Stelle zu weit nach links geschoben. Zähle die Umrechnungszahl noch einmal nach.
+  - [Aufgabe Nr. 48](./?umrechnen-ueben=48#umrechnen-ueben): Rechne um: 564 cm³ sind wie viele l? → Lösung: 0,564
+    - ✗ 564000: Das ist die falsche Richtung. Überlege: Muss die Zahl größer oder kleiner werden?
+    - ✗ 5,64: Du hast die Stelle des Kommas eine Stelle zu weit nach rechts geschoben. Zähle die Umrechnungszahl noch einmal nach.
+    - ✗ 0,0564: Du hast die Stelle des Kommas eine Stelle zu weit nach links geschoben. Zähle die Umrechnungszahl noch einmal nach.
+  - [Aufgabe Nr. 49](./?umrechnen-ueben=49#umrechnen-ueben): Rechne um: 641,5 cm sind wie viele dm? → Lösung: 64,15
+    - ✗ 6415: Das ist die falsche Richtung. Überlege: Muss die Zahl größer oder kleiner werden?
+    - ✗ 641,5: Du hast die Stelle des Kommas eine Stelle zu weit nach rechts geschoben. Zähle die Umrechnungszahl noch einmal nach.
+    - ✗ 6,415: Du hast die Stelle des Kommas eine Stelle zu weit nach links geschoben. Zähle die Umrechnungszahl noch einmal nach.
+  - [Aufgabe Nr. 50](./?umrechnen-ueben=50#umrechnen-ueben): Rechne um: 304 cm sind wie viele mm? → Lösung: 3.040
+    - ✗ 30,4: Das ist die falsche Richtung. Überlege: Muss die Zahl größer oder kleiner werden?
+    - ✗ 30400: Du hast die Stelle des Kommas eine Stelle zu weit nach rechts geschoben. Zähle die Umrechnungszahl noch einmal nach.
+    - ✗ 304: Du hast die Stelle des Kommas eine Stelle zu weit nach links geschoben. Zähle die Umrechnungszahl noch einmal nach.
+  - [Aufgabe Nr. 51](./?umrechnen-ueben=51#umrechnen-ueben): Rechne um: 186 km sind wie viele m? → Lösung: 186.000
+    - ✗ 0,186: Das ist die falsche Richtung. Überlege: Muss die Zahl größer oder kleiner werden?
+    - ✗ 1860000: Du hast die Stelle des Kommas eine Stelle zu weit nach rechts geschoben. Zähle die Umrechnungszahl noch einmal nach.
+    - ✗ 18600: Du hast die Stelle des Kommas eine Stelle zu weit nach links geschoben. Zähle die Umrechnungszahl noch einmal nach.
+  - [Aufgabe Nr. 52](./?umrechnen-ueben=52#umrechnen-ueben): Rechne um: 607 l sind wie viele ml? → Lösung: 607.000
+    - ✗ 0,607: Das ist die falsche Richtung. Überlege: Muss die Zahl größer oder kleiner werden?
+    - ✗ 6070000: Du hast die Stelle des Kommas eine Stelle zu weit nach rechts geschoben. Zähle die Umrechnungszahl noch einmal nach.
+    - ✗ 60700: Du hast die Stelle des Kommas eine Stelle zu weit nach links geschoben. Zähle die Umrechnungszahl noch einmal nach.
+  - [Aufgabe Nr. 53](./?umrechnen-ueben=53#umrechnen-ueben): Rechne um: 105 t sind wie viele kg? → Lösung: 105.000
+    - ✗ 0,105: Das ist die falsche Richtung. Überlege: Muss die Zahl größer oder kleiner werden?
+    - ✗ 1050000: Du hast die Stelle des Kommas eine Stelle zu weit nach rechts geschoben. Zähle die Umrechnungszahl noch einmal nach.
+    - ✗ 10500: Du hast die Stelle des Kommas eine Stelle zu weit nach links geschoben. Zähle die Umrechnungszahl noch einmal nach.
+  - [Aufgabe Nr. 54](./?umrechnen-ueben=54#umrechnen-ueben): Rechne um: 600,5 m sind wie viele cm? → Lösung: 60.050
+    - ✗ 6,005: Das ist die falsche Richtung. Überlege: Muss die Zahl größer oder kleiner werden?
+    - ✗ 600500: Du hast die Stelle des Kommas eine Stelle zu weit nach rechts geschoben. Zähle die Umrechnungszahl noch einmal nach.
+    - ✗ 6005: Du hast die Stelle des Kommas eine Stelle zu weit nach links geschoben. Zähle die Umrechnungszahl noch einmal nach.
+  - [Aufgabe Nr. 55](./?umrechnen-ueben=55#umrechnen-ueben): Rechne um: 429,5 kg sind wie viele g? → Lösung: 429.500
+    - ✗ 0,4295: Das ist die falsche Richtung. Überlege: Muss die Zahl größer oder kleiner werden?
+    - ✗ 4295000: Du hast die Stelle des Kommas eine Stelle zu weit nach rechts geschoben. Zähle die Umrechnungszahl noch einmal nach.
+    - ✗ 42950: Du hast die Stelle des Kommas eine Stelle zu weit nach links geschoben. Zähle die Umrechnungszahl noch einmal nach.
+  - [Aufgabe Nr. 56](./?umrechnen-ueben=56#umrechnen-ueben): Rechne um: 753,5 dm sind wie viele mm? → Lösung: 75.350
+    - ✗ 7,535: Das ist die falsche Richtung. Überlege: Muss die Zahl größer oder kleiner werden?
+    - ✗ 753500: Du hast die Stelle des Kommas eine Stelle zu weit nach rechts geschoben. Zähle die Umrechnungszahl noch einmal nach.
+    - ✗ 7535: Du hast die Stelle des Kommas eine Stelle zu weit nach links geschoben. Zähle die Umrechnungszahl noch einmal nach.
+  - [Aufgabe Nr. 57](./?umrechnen-ueben=57#umrechnen-ueben): Rechne um: 842 mg sind wie viele g? → Lösung: 0,842
+    - ✗ 842000: Das ist die falsche Richtung. Überlege: Muss die Zahl größer oder kleiner werden?
+    - ✗ 8,42: Du hast die Stelle des Kommas eine Stelle zu weit nach rechts geschoben. Zähle die Umrechnungszahl noch einmal nach.
+    - ✗ 0,0842: Du hast die Stelle des Kommas eine Stelle zu weit nach links geschoben. Zähle die Umrechnungszahl noch einmal nach.
+  - [Aufgabe Nr. 58](./?umrechnen-ueben=58#umrechnen-ueben): Rechne um: 598 km sind wie viele m? → Lösung: 598.000
+    - ✗ 0,598: Das ist die falsche Richtung. Überlege: Muss die Zahl größer oder kleiner werden?
+    - ✗ 5980000: Du hast die Stelle des Kommas eine Stelle zu weit nach rechts geschoben. Zähle die Umrechnungszahl noch einmal nach.
+    - ✗ 59800: Du hast die Stelle des Kommas eine Stelle zu weit nach links geschoben. Zähle die Umrechnungszahl noch einmal nach.
+  - [Aufgabe Nr. 59](./?umrechnen-ueben=59#umrechnen-ueben): Rechne um: 318,5 l sind wie viele ml? → Lösung: 318.500
+    - ✗ 0,3185: Das ist die falsche Richtung. Überlege: Muss die Zahl größer oder kleiner werden?
+    - ✗ 3185000: Du hast die Stelle des Kommas eine Stelle zu weit nach rechts geschoben. Zähle die Umrechnungszahl noch einmal nach.
+    - ✗ 31850: Du hast die Stelle des Kommas eine Stelle zu weit nach links geschoben. Zähle die Umrechnungszahl noch einmal nach.
+  - [Aufgabe Nr. 60](./?umrechnen-ueben=60#umrechnen-ueben): Rechne um: 850,5 l sind wie viele cm³? → Lösung: 850.500
+    - ✗ 0,8505: Das ist die falsche Richtung. Überlege: Muss die Zahl größer oder kleiner werden?
+    - ✗ 8505000: Du hast die Stelle des Kommas eine Stelle zu weit nach rechts geschoben. Zähle die Umrechnungszahl noch einmal nach.
+    - ✗ 85050: Du hast die Stelle des Kommas eine Stelle zu weit nach links geschoben. Zähle die Umrechnungszahl noch einmal nach.
+  - [Aufgabe Nr. 61](./?umrechnen-ueben=61#umrechnen-ueben): Rechne um: 765,5 dm sind wie viele m? → Lösung: 76,55
+    - ✗ 7655: Das ist die falsche Richtung. Überlege: Muss die Zahl größer oder kleiner werden?
+    - ✗ 765,5: Du hast die Stelle des Kommas eine Stelle zu weit nach rechts geschoben. Zähle die Umrechnungszahl noch einmal nach.
+    - ✗ 7,655: Du hast die Stelle des Kommas eine Stelle zu weit nach links geschoben. Zähle die Umrechnungszahl noch einmal nach.
+  - [Aufgabe Nr. 62](./?umrechnen-ueben=62#umrechnen-ueben): Rechne um: 740 l sind wie viele m³? → Lösung: 0,74
+    - ✗ 740000: Das ist die falsche Richtung. Überlege: Muss die Zahl größer oder kleiner werden?
+    - ✗ 7,4: Du hast die Stelle des Kommas eine Stelle zu weit nach rechts geschoben. Zähle die Umrechnungszahl noch einmal nach.
+    - ✗ 0,074: Du hast die Stelle des Kommas eine Stelle zu weit nach links geschoben. Zähle die Umrechnungszahl noch einmal nach.
+  - [Aufgabe Nr. 63](./?umrechnen-ueben=63#umrechnen-ueben): Rechne um: 211 m sind wie viele dm? → Lösung: 2.110
+    - ✗ 21,1: Das ist die falsche Richtung. Überlege: Muss die Zahl größer oder kleiner werden?
+    - ✗ 21100: Du hast die Stelle des Kommas eine Stelle zu weit nach rechts geschoben. Zähle die Umrechnungszahl noch einmal nach.
+    - ✗ 211: Du hast die Stelle des Kommas eine Stelle zu weit nach links geschoben. Zähle die Umrechnungszahl noch einmal nach.
+  - [Aufgabe Nr. 64](./?umrechnen-ueben=64#umrechnen-ueben): Rechne um: 411 mm sind wie viele cm? → Lösung: 41,1
+    - ✗ 4110: Das ist die falsche Richtung. Überlege: Muss die Zahl größer oder kleiner werden?
+    - ✗ 411: Du hast die Stelle des Kommas eine Stelle zu weit nach rechts geschoben. Zähle die Umrechnungszahl noch einmal nach.
+    - ✗ 4,11: Du hast die Stelle des Kommas eine Stelle zu weit nach links geschoben. Zähle die Umrechnungszahl noch einmal nach.
+  - [Aufgabe Nr. 65](./?umrechnen-ueben=65#umrechnen-ueben): Rechne um: 72 cm sind wie viele mm? → Lösung: 720
+    - ✗ 7,2: Das ist die falsche Richtung. Überlege: Muss die Zahl größer oder kleiner werden?
+    - ✗ 7200: Du hast die Stelle des Kommas eine Stelle zu weit nach rechts geschoben. Zähle die Umrechnungszahl noch einmal nach.
+    - ✗ 72: Du hast die Stelle des Kommas eine Stelle zu weit nach links geschoben. Zähle die Umrechnungszahl noch einmal nach.
+  - [Aufgabe Nr. 66](./?umrechnen-ueben=66#umrechnen-ueben): Rechne um: 729,5 mm sind wie viele dm? → Lösung: 7,295
+    - ✗ 72950: Das ist die falsche Richtung. Überlege: Muss die Zahl größer oder kleiner werden?
+    - ✗ 72,95: Du hast die Stelle des Kommas eine Stelle zu weit nach rechts geschoben. Zähle die Umrechnungszahl noch einmal nach.
+    - ✗ 0,7295: Du hast die Stelle des Kommas eine Stelle zu weit nach links geschoben. Zähle die Umrechnungszahl noch einmal nach.
+  - [Aufgabe Nr. 67](./?umrechnen-ueben=67#umrechnen-ueben): Rechne um: 159 kg sind wie viele g? → Lösung: 159.000
+    - ✗ 0,159: Das ist die falsche Richtung. Überlege: Muss die Zahl größer oder kleiner werden?
+    - ✗ 1590000: Du hast die Stelle des Kommas eine Stelle zu weit nach rechts geschoben. Zähle die Umrechnungszahl noch einmal nach.
+    - ✗ 15900: Du hast die Stelle des Kommas eine Stelle zu weit nach links geschoben. Zähle die Umrechnungszahl noch einmal nach.
