@@ -1,15 +1,17 @@
 <script setup lang="ts">
-import { computed, ref } from "vue";
-import { check, generate, reason, type Props } from "./Skala.ts";
+// A measuring cylinder whose water level the learner reads off, for the task of the number seed. It is the input of
+// the task: it emits the number typed with answer (undefined while there is none), and the explainer draws "Prüfen",
+// checks it with Skala.ts and gives the feedback; Enter in the field checks too.
+import { computed, ref, watch } from "vue";
+import { generate, parse, type Props } from "./Skala.ts";
 
 const props = defineProps<{
   seed: number;
   frage: string;
   einheit: string;
   eingabe: string;
-  pruefen: string;
 }>();
-const emit = defineEmits<{ answered: [result: { correct: boolean; reason: string }] }>();
+const emit = defineEmits<{ answer: [number | undefined] }>();
 
 const asProps = (): Props => ({ ...props });
 const task = computed(() => generate(props.seed, asProps()));
@@ -27,15 +29,11 @@ const ticks = computed(() => {
 });
 const levelY = computed(() => bottom - (task.value.value / task.value.max) * (bottom - top));
 
-function submit(): void {
-  const number = Number(input.value.trim().replace(",", "."));
-  if (input.value.trim() === "" || Number.isNaN(number)) return;
-  emit("answered", { correct: check(task.value, number), reason: reason(task.value, number) });
-}
+watch(input, (typed) => emit("answer", parse(typed)));
 </script>
 
 <template>
-  <form class="skala" @submit.prevent="submit">
+  <div class="skala">
     <svg
       viewBox="0 0 200 320"
       width="200"
@@ -59,6 +57,5 @@ function submit(): void {
       <input v-model="input" type="text" inputmode="decimal" autocomplete="off" />
       {{ einheit }}
     </label>
-    <button type="submit">{{ pruefen }}</button>
-  </form>
+  </div>
 </template>
