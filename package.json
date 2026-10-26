@@ -9,7 +9,7 @@
     "prepare": "lernapps hooks"
   },
   "devDependencies": {
-    "@lernapps/app-templates": "github:lernapps/app-templates#f28d02036d0fdff868a56c5e5458a56de1a684c5",
+    "@lernapps/app-templates": "github:lernapps/app-templates#7f78841cc89888cdfcfdbbd6ff704466355269c1",
     "@lernapps/tooling": "github:lernapps/tooling#9dd7b276de11fd769d214b92d8b6a534dec732a4",
     "typescript": "6.0.3",
     "vite-plus": "1.0.0",
