@@ -1,9 +1,8 @@
 export type Props = {
-  seed: number;
+  seed?: number;
   frage: string;
   einheit: string;
   eingabe: string;
-  pruefen: string;
 };
 
 export type Task = {
@@ -66,8 +65,16 @@ export function wrong(task: Task): number {
   return task.n;
 }
 
-export function reason(task: Task, answer: number): string {
-  if (check(task, answer)) return "";
+/** The number typed, with a comma or a point; undefined while there is none. */
+export function parse(typed: string): number | undefined {
+  const text = typed.trim().replace(",", ".");
+  const number = Number(text);
+  return text === "" || Number.isNaN(number) ? undefined : number;
+}
+
+/** The app's message for a wrong answer; undefined for a right one. */
+export function reason(task: Task, answer: number, _props?: Props, _lang?: string): string | undefined {
+  if (check(task, answer)) return undefined;
   if (answer === task.n) {
     return `Du hast die Teilstriche gezählt. Ein Teilstrich ist aber ${task.step} ml, nicht 1 ml.`;
   }
@@ -87,10 +94,38 @@ export function describe(task: Task, props: Props, _lang: string): { task: strin
   };
 }
 
+/** A number as the learner writes it: with a decimal comma. */
+const number = (value: number) => String(value).replace(".", ",");
+
+/** The task as a learner reads it, with {max}, {label}, {step}, {above} and {base} for what sets it. */
+export function template(props: Props, _lang: string): string {
+  const unit = props.einheit;
+  return (
+    `Ein Messzylinder hat eine Skala von 0 bis {max} ${unit}. Beschriftet ist alle {label} ${unit}, ` +
+    `ein Teilstrich ist {step} ${unit}. Der Wasserstand liegt {above} Teilstriche über dem Strich bei {base} ${unit}. ` +
+    props.frage
+  );
+}
+
+/** What sets a task: the scale and where the water level is. */
+export function params(task: Task, _props: Props, _lang: string): Record<string, number> {
+  return { max: task.max, label: task.label, step: task.step, above: task.above, base: task.base };
+}
+
+/** The answer of each typical mistake of about.mistakes: the marks counted, the labelled mark alone. */
+export function mistakes(task: Task, _props?: Props): number[] {
+  return [task.n, task.base];
+}
+
+/** An answer as the learner gives it, with its unit. */
+export function show(answer: number, _task: Task, props: Props, _lang: string): string {
+  return `${number(answer)} ${props.einheit}`;
+}
+
 export const about = {
   task: "Ein Messzylinder mit Skala: Lernende lesen den Wasserstand ab. Beschriftet ist nur jeder fünfte Strich, der Wasserstand liegt dazwischen.",
   answer:
-    "Eine Zahl in ml: der Wert des beschrifteten Strichs unter dem Wasserstand plus die Teilstriche darüber mal dem Wert eines Teilstrichs.",
+    "Eine Zahl in ml, ins Feld unter dem Messzylinder getippt, dann „Prüfen“: der Wert des beschrifteten Strichs unter dem Wasserstand plus die Teilstriche darüber mal dem Wert eines Teilstrichs.",
   correct: "Jede Zahl, die dem Wasserstand entspricht, mit Komma oder Punkt geschrieben.",
   mistakes: [
     "Die Teilstriche werden gezählt, ohne zu beachten, wie viel ein Teilstrich ist.",

@@ -64,7 +64,6 @@ blocks:
           frage: Wie viel Wasser ist im Messzylinder? Gib die Zahl in ml an, ohne Einheit.
           einheit: ml
           eingabe: Antwort
-          pruefen: Prüfen
         examples:
           accepted:
             - { answer: 26, seed: 1 }
